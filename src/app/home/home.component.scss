@@ -1,0 +1,90 @@
+//Nav Bar CSS and SASS 
+    nav
+    {
+       
+        max-width: 100%;
+        margin:  1.5% auto;
+        padding: .5% 0 0 .5%;
+        height: 125px;
+    }
+    .nav-div-3
+    {
+        position: relative;
+        left: -45px;
+        padding: 0 15px 0 45px;
+    }
+    .nav-div-3 p
+    {
+        margin: -15px 0 0 0;
+        font-family: 'Neuton';
+        color: #0e4914; 
+        font-size: 1.2em;
+    }
+    .nav-div a 
+    {
+        position: relative;
+        top: 50px;
+        text-decoration: none;
+        font-family: 'Neuton';
+        color: #0e4914;
+        font-size: 1.35em;
+    }
+    // -Flexbox - Nav
+        .box-1
+        {
+            display: flex;
+            justify-content: center;
+
+        }
+        .nav-div
+        {
+           
+            color: blue;
+            margin: 0 .5% 0 .5%;
+            width: 15%;
+            max-height: 120px;
+        
+        }
+    //img 
+        .img-nav-div-3
+        {
+            max-width: 66%;
+            position: relative;
+            top: -15px;
+            left: 25px;
+        }
+
+
+
+//Meida Query Responive Code 
+    //Nav Bar Media Query
+    @media screen and (max-width: 700px) and (min-width: 150px) {
+        nav
+        {
+            max-width: 98%;
+            height: 17%;
+        }
+        .box-1
+        {
+            flex-direction: column;
+            
+        }
+        .nav-div
+        {
+            min-width: 95%;
+        }
+        .nav-div-3
+        {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 1100px) and (min-width: 701px) {
+        .nav-div-3
+        {
+            width: 150px;
+        }
+        .nav-div-3 p
+        {
+            font-size: 1em;
+        }
+    }
