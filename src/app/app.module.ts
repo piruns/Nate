@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { NateComponent } from './nate/nate.component';
-import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
+import { PhotoComponent } from './photo/photo.component';
+
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
     HomeComponent,
     AboutComponent,
     NateComponent,
-    PhotoGalleryComponent
+    PhotoComponent,
+    
   ],
   imports: [
     BrowserModule,
