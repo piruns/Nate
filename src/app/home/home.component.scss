@@ -3,9 +3,9 @@
     {
        
         max-width: 100%;
-        margin:  1.5% auto;
+        margin:  .5% auto;
         padding: .5% 0 0 .5%;
-        height: 125px;
+        height: 50px;
     }
     
     .nav-div-3
@@ -16,10 +16,11 @@
     }
     .nav-div-3 p
     {
-        margin: -15px 0 0 0;
+        margin: -35px 0 0 75px;
         font-family: 'Neuton';
         color: #0e4914; 
-        font-size: 1.2em;
+        font-size: 1.5em;
+        position: relative;
     }
     .nav-div a 
     {
@@ -28,7 +29,7 @@
         text-decoration: none;
         font-family: 'Neuton';
         color: #0e4914;
-        font-size: 1.35em;
+        font-size: 1.2em;
     }
     // -Flexbox - Nav
         .box-1
@@ -44,22 +45,27 @@
             margin: 0 .5% 0 .5%;
             width: 15%;
             max-height: 120px;
-        
+        }
+        .nav-div-3
+        {
+            flex-grow: 2;
+            margin: 0 auto;
         }
     //img 
         .img-nav-div-3
         {
-            max-width: 66%;
+            max-width: 50%;
+            max-height: 88%;
             position: relative;
             top: -15px;
-            left: 25px;
+            left: 125px;
         }
 
 
 
 //Meida Query Responive Code 
     //Nav Bar Media Query
-    @media screen and (max-width: 700px) and (min-width: 150px) {
+    @media screen and (max-width: 780px) and (min-width: 150px) {
         nav
         {
             max-width: 98%;
@@ -79,13 +85,19 @@
             display: none;
         }
     }
-    @media screen and (max-width: 1100px) and (min-width: 701px) {
+    @media screen and (max-width: 1025px) and (min-width: 781px) {
         .nav-div-3
         {
             width: 150px;
         }
         .nav-div-3 p
         {
-            font-size: 1em;
+            font-size: 1.1em;
+            position: relative;
+            left: 50px;
+        }
+        .nav-div a 
+        {
+            font-size: .9em;
         }
     }
